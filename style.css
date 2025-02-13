@@ -292,17 +292,134 @@
 .right .download__app_container div img{
   width: 35%;
 }
+/*media queries for Download App */
+@media only screen and (max-width:1300px) {
+  .get__the_app .semiContainer .left,
+  .get__the_app .semiContainer .right{
+    flex:1,/* flex with 50% of width and where 40% is for right width and 40% left width*/
+
+  }
+  .get__the_app .semiContainer{
+    width: 80%;
+
+  }
+  
+}
+@media only screen and(max-width:900px) {
+  .get__the_app{
+    padding:2rem 0;
+  }
+  .get__the_app .semiContainer{
+    width: 95%;
+    flex-direction: column;
+  }
+  
+}
+
+.footer{
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+
+}
+
+.footer_section1{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.footer_section1 img{
+  width: 100px;
+}
+
+.section1_buttonContainer{
+  display: flex;
+  gap: 1rem;
 
 
+}
+.section1_buttonContainer button{
+  padding: 5px;
+  width:90px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: transparent;
+  gap:12px;
+  cursor: pointer;
+}
+
+.navigation_container{
+  display:grid;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr; Instead of writing this we can write given below */
+  grid-template-columns: repeat(5,1fr);
+  width: 80%;
+  margin: auto;
+  gap: 1rem;
+  padding-top: 15px;
+}
+
+.link__container{
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.link__container h5{
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 0.8px;
+}
+.footer__link{
+  text-decoration:none; /* Indicates we donot want underline */
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+}
+.footer_link:hover{
+  color: black;
+}
+
+.section__link_container{
+  display:flex;
+  gap: 10px;
+}
+.section__link_container  button{
+  background-color: black;
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
 
 
+}
+
+.section__link_container  button i{
+  /*color:white;*/
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 
+}
+.footer__section_logos{
+  width: 100%;
 
+}
 
+.disclaimer{
+  width: 95%;
+  color: gray;
+  margin: auto;
+  border-top: 1px solid gray;
+  padding-top: 1.8rem;
 
-
-
+}
 
 
 
